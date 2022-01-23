@@ -3,10 +3,10 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 body,
 h1,
@@ -18,18 +18,142 @@ figure,
 blockquote,
 dl,
 dd {
-  margin: 0;
+	margin: 0;
 }
 img,
 picture {
-  max-width: 100%;
-  display: block;
+	max-width: 100%;
+	display: block;
 }
 input,
 button,
 textarea,
 select {
-  font: inherit;
+	font: inherit;
 }
 
+/* 
+*----------------- font face */
+@font-face {
+	font-family: "gintobold";
+	src: url(../assets/fonts/gintobold.woff2);
+}
+@font-face {
+	font-family: "gintoregular";
+	src: url(../assets/fonts/gintoregular.woff2);
+}
+@font-face {
+	font-family: "whitneysemibold";
+	src: url(../assets/fonts/whitneysemibold.woff);
+}
+@font-face {
+	font-family: "whitneymediumregular";
+	src: url(../assets/fonts/whitneymediumregular.woff);
+}
+@font-face {
+	font-family: "whitneybookregular";
+	src: url(../assets/fonts/whitneybookregular.woff);
+}
 
+/* 
+*------------------ main css */
+body {
+	min-height: 100vh;
+	font-family: "serif";
+	/* background-color: #404eed; */
+}
+
+.container {
+	padding-left: 5.5rem !important;
+	padding-right: 5.5rem !important;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	font-family: "whitneysemibold";
+	color: #fff;
+	background-color: #404eed;
+	height: 5rem;
+	justify-content: space-between;
+}
+.nav__list {
+	display: flex;
+	column-gap: 2rem;
+	list-style: none;
+}
+.nav__link {
+	text-decoration: none;
+	color: inherit;
+}
+.nav__right-wrap {
+	background-color: #fff;
+	padding: 0.6rem 1rem;
+	border-radius: 40px;
+	cursor: pointer;
+}
+.nav__button {
+	font-family: "whitneymediumregular";
+	font-size: 0.875rem;
+	color: #000;
+	text-decoration: none;
+}
+
+.content {
+	/* min-height: 100vh; */
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	row-gap: 2rem;
+	padding: 8rem 0;
+	color: #fff;
+	background-color: #404eed;
+	background-image: url(../assets/images/main-section-left.svg),
+		url(../assets/images/main-section-right.svg), url(../assets/images/blue-cloud.svg);
+	background-position: -50% 108%, 140% 100%, center;
+	background-repeat: no-repeat;
+}
+.content__text-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.content__title {
+	font-family: "gintobold";
+	font-size: 3.5rem;
+	text-transform: uppercase;
+}
+.content__description {
+	width: 67%;
+	font-family: "whitneybookregular";
+	line-height: 2rem;
+	font-size: 1.3rem;
+	margin-top: 2rem;
+}
+.content__button-outer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 2rem;
+}
+.content__button-wrap {
+	width: fit-content;
+	border-radius: 28px;
+	padding: 0.85rem 2rem;
+	background-color: #fff;
+}
+.content__button-wrap:nth-child(2) {
+	background-color: #23272a;
+}
+.content__button-wrap a {
+	font-family: "whitneymediumregular";
+	font-size: 1.25rem;
+	text-decoration: none;
+	color: #000;
+}
+.content__button-wrap:nth-child(2) a {
+	color: #fff;
+}
