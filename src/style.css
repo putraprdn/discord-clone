@@ -79,7 +79,7 @@ body {
 }
 .nav__list {
 	display: flex;
-	column-gap: 2rem;
+	column-gap: 2.5rem;
 	list-style: none;
 }
 .nav__link {
@@ -94,7 +94,7 @@ body {
 }
 .nav__button {
 	font-family: "whitneymediumregular";
-	font-size: 0.875rem;
+	font-size: 0.875em;
 	color: #000;
 	text-decoration: none;
 }
@@ -107,12 +107,13 @@ body {
 	text-align: center;
 	justify-content: center;
 	row-gap: 2rem;
-	padding: 8rem 0;
+	padding: 8.5rem 0;
 	color: #fff;
 	background-color: #404eed;
 	background-image: url(../assets/images/main-section-left.svg),
-		url(../assets/images/main-section-right.svg), url(../assets/images/blue-cloud.svg);
-	background-position: -50% 108%, 140% 100%, center;
+		url(../assets/images/main-section-right.svg),
+		url(../assets/images/blue-cloud.svg);
+	background-position: -50% 100%, 140% 100%, center;
 	background-repeat: no-repeat;
 }
 .content__text-wrap {
@@ -123,14 +124,14 @@ body {
 }
 .content__title {
 	font-family: "gintobold";
-	font-size: 3.5rem;
+	font-size: 3.5em;
 	text-transform: uppercase;
 }
 .content__description {
 	width: 67%;
 	font-family: "whitneybookregular";
-	line-height: 2rem;
-	font-size: 1.3rem;
+	line-height: 1.5em;
+	font-size: 1.3em;
 	margin-top: 2rem;
 }
 .content__button-outer {
@@ -140,20 +141,109 @@ body {
 	column-gap: 2rem;
 }
 .content__button-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: fit-content;
+	column-gap: 5px;
 	border-radius: 28px;
 	padding: 0.85rem 2rem;
 	background-color: #fff;
+	color: #23272a;
 }
 .content__button-wrap:nth-child(2) {
 	background-color: #23272a;
 }
 .content__button-wrap a {
 	font-family: "whitneymediumregular";
-	font-size: 1.25rem;
+	font-size: 1.25em;
 	text-decoration: none;
 	color: #000;
 }
 .content__button-wrap:nth-child(2) a {
 	color: #fff;
+}
+
+.server {
+	flex-direction: row-reverse;
+}
+.section {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 5.5rem;
+	color: #23272a;
+	padding: 8rem 0;
+}
+.text-wrap {
+	display: flex;
+	row-gap: 1rem;
+	flex-direction: column;
+}
+.section-title {
+	font-family: "gintoregular";
+	font-size: 3em;
+}
+.section-description {
+	font-family: "whitneybookregular";
+	font-size: 1.2em;
+	line-height: 1.7em;
+}
+.image-wrap {
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+.image {
+	width: 43rem;
+}
+
+.chat {
+	flex-direction: row;
+	background-color: #f6f6f6;
+}
+
+.video {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	padding: 8rem 0;
+	background-color: #f6f6f6;
+	color: #23272a;
+}
+.video__text-wrap {
+	width: 82%;
+}
+.video__title {
+	font-family: "gintobold";
+	font-size: 2.5em;
+	text-transform: uppercase;
+}
+.video__description {
+	margin: 1rem 0;
+	font-weight: 500;
+}
+.video__image-wrap {
+	width: 100%;
+	margin-bottom: 4rem;
+}
+.video__image {
+	width: 100%;
+}
+.video__text-bottom {
+	background-image: url(../assets/images/little-star.svg);
+	padding: 2.5rem;
+	background-repeat: no-repeat;
+}
+.video__subtitle {
+	font-size: 2em;
+	color: #000;
+}
+.video__button-wrap {
+	background-color: #5865f2;
+	color: #fff !important;
+}
+.video__button-wrap a {
+	color: inherit;
 }
