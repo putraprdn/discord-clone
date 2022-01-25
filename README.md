@@ -14,7 +14,7 @@ The original website is [here.](https://discord.com/) (it may changed).
 _Currently in progress_
 
 -   [x] Main Content
--   [ ] Active state
+-   [x] Active state
 -   [ ] Responsive
 
 ### Design
