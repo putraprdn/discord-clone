@@ -1,6 +1,6 @@
 # Discord Website Clone
 
-The original website is [here.](https://discord.com/) (it may changed).
+The original website is [here.](https://discord.com/) (it may have changed).
 
 ## Table of contents
 
